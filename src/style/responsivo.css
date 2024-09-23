@@ -1,0 +1,152 @@
+@media only screen and (max-width: 1023px) {
+    .menu-lateral,
+    .rodape,
+    .cabecalho__botao,
+    .secao-horizontal .cartao__subtitulo,
+    .secao-horizontal .cartao__botao,
+    .secao-horizontal .cartao__player,
+    .secao-vertical .secao__link {
+        display: none;
+    }
+
+    main {
+        margin-bottom: 10rem;
+    }
+    
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar {
+        display: block;
+    }   
+
+    .cabecalho {
+        justify-self: center;
+    }
+
+    .secao-horizontal .cartao {
+        column-gap: .5rem;
+    }
+
+    .secao-horizontal .cartao__imagem {
+        height: 4.58rem;
+    }
+ 
+    .secao-horizontal .cartao__titulo {
+        font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
+    }
+
+    .secao-vertical .cartao {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .secao-player {
+        grid-template-columns: 1fr auto;
+        bottom: 7.125%;
+        right: 0;
+        width: 100vw;
+    }
+    
+    .player_temporizador .player_temporizador-botoes button {
+        display: none;
+    }
+
+    .player_temporizador .player_temporizador-botoes button:nth-child(3) {
+        display: block;
+    }
+
+    .player_temporizador-cronometro {
+        display: grid;
+    }
+    
+    .player_temporizador-cronometro span {
+        display: none;
+    }
+
+    .player_temporizador-cronometro {
+        display: none;
+    }
+
+    .player_temporizador-cronometro_tempo {
+        align-self: center;
+        grid-column: 1/3;
+        margin-top: .3rem;
+    }
+
+    .player_volume {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+
+    .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .cabecalho .cabecalho__logo,
+    .cabecalho__botao__avancar {
+        display: none;
+    }
+
+    .menu-lateral {
+        width: 208px;
+    }
+    
+    .navbar {
+        display: none;
+    }
+
+    .secao-horizontal .cartao__imagem {
+        height: 73px;
+    }
+
+    .secao-horizontal .cartao__titulo {
+        font: 700 16px/22px 'Open Sans', sans-serif;
+    }
+
+    .secao-horizontal .cartao__subtitulo {
+        font: 400 14px/19px 'Open Sans', sans-serif;
+        width: 100%;
+    }
+
+    .secao-vertical .cartao {
+        padding: 1.25rem;
+    }
+
+    .secao-player {
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        border-top: 1px solid black;
+    }
+
+    .secao-player .dois {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .navbar,
+    .cabecalho__logo {
+        display: none;
+    }
+
+    .menu-lateral {
+        width: 228px;
+    }
+
+    .secao-player {
+        bottom: 0;
+        right: 0;
+        width: calc(100% - (228px + .5rem));
+        margin-bottom: .5rem;
+        border-radius: 6px 0 0 6px
+    }
+}
